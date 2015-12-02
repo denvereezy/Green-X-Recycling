@@ -1,8 +1,11 @@
 # Green-X-Recycling
 
-<img align="left" padding=10px src="./images/images (1).jpg">App that allows the users to select the problem that they have in their communities in terms of rubbish/dirt.
+<img align="left" padding=10px width:100px; src="./images/images.jpg">
+App that allows the users to select the problem that they have in their communities in terms of rubbish/dirt.
 
-<img align="left" padding=10px src="./images/images.jpg">Helps different communities to protect enviroment<br> that they live in including their health.
+Helps different communities to protect enviroment<br> that they live in including their health.
+
+
 
 * [Biza](/Persona Biza.md):Owner of Green X Recycling
 * [Lolo](/Persona_Lolo.md): Works for Biza
