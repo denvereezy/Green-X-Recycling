@@ -2,6 +2,9 @@
 /*  ------------------
     Remove Preloader
     ------------------  */
+    $("input").click(function () {
+          $("div").remove('.dave');
+        });
 
 $(window).load(function () {
     $('#preloader').delay(350).fadeOut('slow', function () {
@@ -190,7 +193,7 @@ $(document).ready(function () {
     /*----------------------script for owl carousel sponsors---------------------*/
 
         $("#sponsor-list").owlCarousel({
-                 
+
             autoPlay: 3000, //Set AutoPlay to 3 seconds
             stopOnHover: true,
             items : 3,
@@ -215,6 +218,6 @@ $(document).ready(function () {
     });
 
 
-    
+
 
 });

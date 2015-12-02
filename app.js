@@ -24,8 +24,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function(req, res){
-  res.render("index");
+  res.render("biza",{layout:false});
 });
+app.get('/worker/lolo', function(req, res){
+  res.render("lolo",{layout:false});
+});
+
 // app.post('/lostdog/add', animals.addDogComment);
 // app.post('/lostcat/add', animals.addCatComment);
 // app.post('/founddog/add', animals.adddogFound)
