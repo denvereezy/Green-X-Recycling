@@ -78,6 +78,7 @@
     background-color: #1a1b23;
     z-index: 10000;
 }
+input[type=button]{background: url('http://i.imgur.com/z4Pea.png');outline:none;border:none;background-repeat:no-repeat;cursor:pointer;width:11px;height:11px;}
 #greenx{
   color: #00FF00;
 }
