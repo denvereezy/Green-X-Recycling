@@ -1,6 +1,6 @@
 #Biza 
 
-<img align="left" padding=10px src="./images/PersonaBiza.png">
+<img align="left" padding=10px src="./public/images/PersonaBiza.png">
 
 Owner of Green X Recycling
 
