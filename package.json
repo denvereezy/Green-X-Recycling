@@ -1,0 +1,26 @@
+{
+  "name": "Green-X-Recycling",
+  "version": "0.0.0",
+  "description": "A community recycling company project that helps keep the community clean and creating jobs for people",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denvereezy/Green-X-Recycling.git"
+  },
+  "author": "Denver Daniels, Sibusiso Gabuza, Nolitha Rula, Mnyamezeli Ndengezi",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/denvereezy/Green-X-Recycling/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "express-handlebars": "~2.0.1",
+    "compression": "~1.6.0",
+    "express-myconnection": "~1.0.4",
+    "mysql": "~2.9.0",
+    "body-parser": "~1.14.1"
+  }
+}
