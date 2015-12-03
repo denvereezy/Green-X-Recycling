@@ -97,10 +97,11 @@
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="about-us-desc">
-                                      <div class="s_total clearfix dave"><strong class="cart_module_search left">Route 1 clean up:</strong><span class="cart_module_search">Queensland&nbsp;</span><input type="button"/></div>
-          <div class="s_total clearfix"><strong class="cart_module_search left">Plastic collecting:</strong><span class="cart_module_search">Brisbane&nbsp;</span><input type="button"/></div>
-          <div class="s_total clearfix"><strong class="cart_module_search left">Bin placement:</strong><span class="cart_module_search">Home and Garden&nbsp;</span><input type="button"/></div>
-          <div class="s_total clearfix"><strong class="cart_module_search left">Paper collecting:</strong><span class="cart_module_search">Weber BBQ&nbsp;</span><input type="button"/></div>
+                                      {{#jobs}}
+                                        <h2>{{title}}</h2>
+                                        {{description}}
+                                      {{/jobs}}
+
                                     </div>
                                 </div>
                             </div>
@@ -110,8 +111,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="portfolio-page container-fluid page">
         <div class="row">
             <div class="image-container col-md-3 col-sm-12">

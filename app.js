@@ -5,34 +5,40 @@ var express = require('express'),
     myConnection = require('express-myconnection'),
     mysql = require('mysql'),
     bodyParser = require('body-parser');
-    // animals = require('./routes/animals');
+   lolos = require('./routes/lolo');
+  bizza = require('./routes/biza');
 
-    // var dbOptions = {
-    //       host: 'localhost',
-    //       user: 'biza',
-    //       password: 'password',
-    //       port: 3306,
-    //       database: 'recycling'
-    // };
+    var dbOptions = {
+          host: 'localhost',
+          user: 'biza',
+          password: 'password',
+          port: 3306,
+          database: 'recycling'
+    };
 
 app.use(compression());
-// app.use(myConnection(mysql, dbOptions, 'single'));
+app.use(myConnection(mysql, dbOptions, 'single'));
 app.use(express.static('public'));
 app.engine('handlebars', exphbs({defaultLayout: "main"}));
 app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', function(req, res){
-  res.render("biza",{layout:false});
-});
-app.get('/worker/lolo', function(req, res){
-  res.render("lolo",{layout:false});
-});
+app.get('/worker/lolo', lolos.showAll);
+// app.get('/worker/lolo', function(req, res){
+//   res.render("lolo",{layout:false});
+// });
 
-// app.post('/lostdog/add', animals.addDogComment);
-// app.post('/lostcat/add', animals.addCatComment);
-// app.post('/founddog/add', animals.adddogFound)
+app.get('/', bizza.showAll);
+
+
+app.get('/edit/:id', bizza.get);
+app.post('/eit/:id', bizza.update);
+app.post('/update/:id', bizza.update);
+app.post('/add', bizza.add);
+app.get('/add', bizza.add);
+//this should be a post but this is only an illustrationof CRUD - not on good practices
+app.get('/delete/:id', bizza.delete);
 
 var port = process.env.PORT || 8000;
 var server = app.listen(port, function () {
