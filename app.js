@@ -25,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/worker/lolo', lolos.showAll);
+app.post('/jobs/add', lolos.add);
 // app.get('/worker/lolo', function(req, res){
 //   res.render("lolo",{layout:false});
 // });

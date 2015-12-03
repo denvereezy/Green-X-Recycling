@@ -22,7 +22,14 @@ exports.add = function (req, res, next) {
 			return next(err);
 		}
 		var input = JSON.parse(JSON.stringify(req.body));
-		connection.query('insert into jobs set ?', data, function(err, results) {
+    var data = {
+      title : input.title,
+      description : input.description,
+      location_id : 1,
+      workers_id : 1,
+      job_status : input.job_status
+    };
+		connection.query('insert into jobs set ?', [data], function(err, results) {
 			if (err)
 				console.log("Error inserting : %s ",err );
 			res.redirect('/worker/lolo');

@@ -101,20 +101,31 @@
                           <tr>
                             <th>Title</th>
                             <th>Description</th>
-			    <th>Action</th>
-     	                     </tr>
-                       
-                        
-			{{#jobs}}
-			<tr>
-                      	<td><strong class="cart_module_search left">{{title}}</strong></td>
-			<td><span class="cart_module_search">{{description}}</span></td>
+                            <th>Job Status</th>
+                            <th>Action</th>
+
+                          </tr>
+                        {{#jobs}}
+                        <tr>
+                      <td><div class="s_total clearfix dav"><strong class="cart_module_search left">{{title}}</strong></td><td><span class="cart_module_search">{{description}}</span></td><td>{{job_status}}</td></div>
+
                         <td><button><a href="/edit/{{Id}}">Edit</a></button></td>
                         <td><button><a href="/delete/{{Id}}">Delete</a></button></td>
-<tr>
-			{{/jobs}}
-                     
+                      </tr>
+                        {{/jobs}}
+
+                        {{#jobs}}
+                        <tr>
+                        <div class="s_total clearfix dave"><strong class="cart_module_search left"><td>{{title}}</td></strong><span class="cart_module_search"><td>{{description}}</td><td>{{job_status}}</td></div>
+                        <td><button><a href="/edit/:id">Edit</a></button></td>
+                        <td><button><a href="/delete/:id">Delete</a></button></td>
+                        {{/jobs}}
+                        </tr>
                     </table>
+
+
+
+
                                       </div>
                                   </div>
                               </div>
@@ -193,11 +204,11 @@
                                               <div class="flipper">
                                                   <div class="front">
                                                       <i class="fa fa-lightbulb-o"></i>
-                                                      <h5>Productions</h5>
+                                                      <h5>Collections</h5>
                                                   </div>
                                                   <div class="back">
-                                                      <h5>Productions</h5>
-                                                      <p>Mozilla Web Developer, MooTools &amp; jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                      <h5>Collections</h5>
+                                                      <p>The  bins in NY1 next to the police station is full and paper's are starting to spread allover the area.</p>
                                                   </div>
                                               </div>
                                           </div>
@@ -209,11 +220,11 @@
                                               <div class="flipper">
                                                   <div class="front">
                                                       <i class="fa fa-paint-brush"></i>
-                                                      <h5>Web Designing</h5>
+                                                      <h5>New Bin Needed</h5>
                                                   </div>
                                                   <div class="back">
-                                                      <h5>Web Designing</h5>
-                                                      <p>Mozilla Web Developer, MooTools &amp; jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
+                                                      <h5>New Bin Needed</h5>
+                                                      <p>There is a new location called nkanini that need bins there are no bins in that area.</p>
                                                   </div>
                                               </div>
                                           </div>
