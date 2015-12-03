@@ -4,8 +4,8 @@ var express = require('express'),
     app = express(),
     myConnection = require('express-myconnection'),
     mysql = require('mysql'),
-    bodyParser = require('body-parser');
-   lolos = require('./routes/lolo');
+    bodyParser = require('body-parser'),
+   lolos = require('./routes/lolo'),
   bizza = require('./routes/biza');
 
     var dbOptions = {
@@ -32,7 +32,7 @@ app.post('/jobs/add', lolos.add);
 
 app.get('/', bizza.showAll);
 
-
+app.post('/biza/add/job', bizza.add);
 app.get('/edit/:id', bizza.get);
 app.post('/eit/:id', bizza.update);
 app.post('/update/:id', bizza.update);

@@ -22,6 +22,14 @@ exports.add = function (req, res, next) {
 			return next(err);
 		}
 		var input = JSON.parse(JSON.stringify(req.body));
+		var data = {
+		title : input.title,
+		description : input.description,
+		comments : input.comments,
+		workers_id : 1,
+		location_id : 1,
+		job_status : 'available'
+};
 		connection.query('insert into jobs set ?', data, function(err, results) {
 			if (err)
 				console.log("Error inserting : %s ",err );
