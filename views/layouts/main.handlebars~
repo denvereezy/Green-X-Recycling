@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Green </title>
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+
+  <script src="/js/jquery-2.1.1.min.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.appear.js"></script>
+  <script src="/js/jqBootstrapValidation.js"></script>
+  <script src="/js/modernizr.custom.js"></script>
+  <script src="/js/script.js"></script>
+
+</head>
+<body>
+
+  <section id="logo-section" class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo text-center">
+            <h1>Green <span id="greenx">X</span> Recycling</h1>
+            <span>An investment to good health</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="mainbody-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="menu-item light-red size">
+            <a href="#contact-modal" data-toggle="modal">
+              <!-- <img src="/images/cat.png" height="70px"> -->
+              <p>Jobs Available</p>
+            </a>
+          </div>
+          <div class="menu-item color size">
+            <a href="#testimonial-modal" data-toggle="modal">
+              <i class="fa fa-list-alt"></i>
+              <p>Doing</p>
+            </a>
+          </div>
+          <div class="menu-item blue">
+            <a href="#catBack" data-toggle="modal">
+              <i class="fa fa-paw"></i>
+              <p>Done</p>
+            </a>
+          </div>
+          <div class="menu-item blue">
+            <a href="#contact" data-toggle="modal">
+              <i class="fa fa-paw"></i>
+              <p>Contact</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div> By <a href="https://www.github.com/denvereezy" target="_blank">Denver Daniels</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- missing dog -->
+  <div class="section-modal modal fade" id="feature-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center styles">
+            <h3>Missing a dog?</h3>
+            <p>Please complete the form below</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row" style="padding-top: 80px;">
+            <div class="col-md-12">
+              <form action="/lostdog/add" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="ownerName" value="{{ownerName}}" class="form-control" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" value="{{email}}" class="form-control" placeholder="Your Email *" required data-validation-required-message="Please enter your email.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="phoneNumber" value="{{phoneNumber}}" class="form-control" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="lastSeen" value="{{lastSeen}}" class="form-control" placeholder="Last seen *" required data-validation-required-message="Please enter your phone number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <textarea name="description" value="{{description}}" class="form-control" placeholder="Description of the dog *" required data-validation-required-message="Please enter a description of the dog."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div id="success"></div>
+                </div>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-modal modal fade" id="dogBack" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center styles">
+            <h3>See your dog in the list?</h3>
+            <p>Please complete the form and get your dog back</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row" style="padding-top: 80px;">
+            <div class="col-md-12">
+              <form action="#" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="ownerName" value="{{ownerName}}" class="form-control" placeholder="Name of dog *" required data-validation-required-message="Please enter name of dog.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" value="{{email}}" class="form-control" placeholder="Your Email *" required data-validation-required-message="Please enter youremail.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="phoneNumber" value="{{phoneNumber}}" class="form-control" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="lastSeen" value="{{lastSeen}}" class="form-control" placeholder="Last seen *" required data-validation-required-message="Please enter your phone number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <textarea name="description" value="{{description}}" class="form-control" placeholder="Description of the dog *" required data-validation-required-message="Please enter a description of the dog."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div id="success"></div>
+                </div>
+                <input type="submit">
+              </form>
+                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-modal modal fade" id="catBack" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center styles">
+            <h3>See your cat in the list?</h3>
+            <p>Please complete the form and get your dog back</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row" style="padding-top: 80px;">
+            <div class="col-md-12">
+              <form action="#" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="ownerName" value="{{ownerName}}" class="form-control" placeholder="Name of cat *" required data-validation-required-message="Please enter name of cat.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" name="email" value="{{email}}" class="form-control" placeholder="Your Email *" required data-validation-required-message="Please enter youremail.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="phoneNumber" value="{{phoneNumber}}" class="form-control" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="lastSeen" value="{{lastSeen}}" class="form-control" placeholder="Last seen *" required data-validation-required-message="Please enter your phone number.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <textarea name="description" value="{{description}}" class="form-control" placeholder="Description of the dog *" required data-validation-required-message="Please enter a description of the dog."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div id="success"></div>
+                </div>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- dogs found -->
+  <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h3 class="styles">Dogs found recently</h3>
+          </div>
+        </div>
+        <div class="row">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name of dog</th>
+                <th>Color</th>
+                <th>Date found</th>
+                <th>Place latitude</th>
+                <th>Place longitude</th>
+                <th>Breed</th>
+                <th>Gender</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each animals}}
+              <tr class="success">
+                <td>{{name}}</td>
+                <td>{{color}}</td>
+                <td>{{date_found}}</td>
+                <td>{{latitude}}</td>
+                <td>{{longitude}}</td>
+                <td>{{breed}}</td>
+                <td>{{gender}}</td>
+                <td>{{description}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row dogfound" style="padding-top: 80px;">
+        <div class="col-md-12">
+          <form action="/founddog/add" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="name" value="{{name}}" class="form-control" placeholder="Name of dog *" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="color" value="{{color}}" class="form-control" placeholder="Color *" required data-validation-required-message="Please enter youremail.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="gender" value="{{gender}}" class="form-control" placeholder="Gender *" required data-validation-required-message="Please enter youremail.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="date" name="date_found" value="{{date_found}}" class="form-control" placeholder="Date  *" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div id="loc1" class="locations">
+	                   <textarea id="latitude" class="text" name="latitude" value="{{latitude}}" placeholder="Location - latitude"></textarea>
+	                    <textarea id="longitude" name="longitude" value="{{longitude}}" placeholder="location - longitude"></textarea>
+	                     <button id="clicker">get location</button>
+                     </div>
+              </div>
+              <div class="form-group">
+                <input type="text" name="breed" value="{{breed}}" class="form-control" placeholder="Breed  *" required data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea name="description" value="{{description}}" class="form-control" placeholder="Description of the dog *" required data-validation-required-message="Please enter a description of the dog."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+              </div>
+              <div id="success"></div>
+            </div>
+            <input type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- cat comments -->
+<div class="section-modal modal fade" id="team-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2>Comments</h2>
+        <div class="comments">
+          {{#each cat_comment}}
+          <p>{{description}} {{lastSeen}} - {{ownerName}} {{email}} /{{phoneNumber}} </p>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- dog comments -->
+<div class="section-modal modal fade" id="news-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2>Comments</h2>
+        <div class="comments">
+          {{#each dogs}}
+          <p>{{description}} {{lastSeen}} - {{ownerName}} {{email}} /{{phoneNumber}} </p>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- missing cat -->
+<div class="section-modal modal fade contact" id="contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center styles">
+          <h3>Missing a cat?</h3>
+          <h2>Please complete the form below</h2>
+        </div>
+        <div class="row" style="padding-top: 80px;">
+          <div class="col-md-12">
+            <form action="/lostcat/add" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="ownerName" value="{{ownerName}}" class="form-control" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" value="{{email}}" class="form-control" placeholder="Your Email *" required data-validation-required-message="Please enter youremail.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="phoneNumber" value="{{phoneNumber}}" class="form-control" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="lastSeen" value="{{lastSeen}}" class="form-control" placeholder="Last seen *" required data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea name="description" value="{{description}}" class="form-control" placeholder="Description of the dog *" required data-validation-required-message="Please enter a description of the dog."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div id="success"></div>
+              </div>
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- cats found -->
+<div class="section-modal modal fade contact" id="testimonial-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h3 class="styles">Cats found recently</h3>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name of cat</th>
+              <th>Color</th>
+              <th>Date found</th>
+              <th>Place found</th>
+              <th>Breed</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each cats}}
+            <tr class="success">
+              <td>{{name}}</td>
+              <td>{{color}}</td>
+              <td>{{date_found}}</td>
+              <td>{{area}}</td>
+              <td>{{breed}}</td>
+              <td>{{description}}</td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="geolib.min.js"></script>
+<script type="text/javascript">
+
+var btn = document.getElementById('clicker');
+btn.addEventListener('click', function(event){
+  event.preventDefault();
+	navigator.geolocation.getCurrentPosition(function(location){
+		var lat = document.getElementById("latitude");
+		var long = document.getElementById("longitude");
+		var locationLat = lat.innerHTML = location.coords.latitude;
+		var locationLong = long.innerHTML = location.coords.longitude;
+	});
+  return false;
+});
+</script>
+</html>
