@@ -1,12 +1,12 @@
 # Green-X-Recycling
 
-<img align="left" padding=10px width:100px; src="./images/images.jpg">
+<img align="left" padding=10px width:100px; src="./public/images/images.jpg">
 The app was created to help workers find the location of jobs much quicker an the boss to see how big his area of service is so that he knows which worker to send where
 
 The app uses geo-location to find out where workers is, the location of a job and the distance workers needs to travel making it easer for workers to calculate how long it will take to finish the job.
 
 ## Personas
-* [Biza](/Persona Biza.md): Owner of Green X Recycling
+* [Biza](/Persona_Biza.md): Owner of Green X Recycling
 * [Lolo](/Persona_Lolo.md): Worker at Green X Recycling
 
 ## Instructions

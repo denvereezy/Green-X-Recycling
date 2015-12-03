@@ -1,6 +1,6 @@
 #Lolo 
 
-<img align="left" padding=10px src="./images/PersonaLolo.png">
+<img align="left" padding=10px src="./public/images/PersonaLolo.png">
 
 Worker at Green X Recycling
 
