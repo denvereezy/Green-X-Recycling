@@ -11,4 +11,4 @@ She met Biza while he was recycling in her community.
 She joined the company to earn a living and because she is passionate about hygen and loves a clean community.
 
 
-| Profiles:  [Biza](/Persona_Biza.md) | [Lolo](/Persona_Lolo.md)
+| Profiles:  [Biza](/Persona_Biza.md) | [Lolo](/Persona_Lolo.md) | [Phindile](/Persona_Phindile.md)
