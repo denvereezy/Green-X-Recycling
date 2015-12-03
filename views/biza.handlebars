@@ -101,30 +101,20 @@
                           <tr>
                             <th>Title</th>
                             <th>Description</th>
-
-                          </tr>
-                        {{#jobs}}
-                        <tr>
-                      <td><div class="s_total clearfix dav"><strong class="cart_module_search left">{{title}}</strong></td><td><span class="cart_module_search">{{description}}</span></td></div>
-
+			    <th>Action</th>
+     	                     </tr>
+                       
+                        
+			{{#jobs}}
+			<tr>
+                      	<td><strong class="cart_module_search left">{{title}}</strong></td>
+			<td><span class="cart_module_search">{{description}}</span></td>
                         <td><button><a href="/edit/{{Id}}">Edit</a></button></td>
                         <td><button><a href="/delete/{{Id}}">Delete</a></button></td>
-                      </tr>
-                        {{/jobs}}
-                        {{#jobs}}
-                        <tr>
-
-                        <div class="s_total clearfix dave"><strong class="cart_module_search left"><td>{{title}}</td></strong><span class="cart_module_search"><td>{{description}}</td></div>
-
-                        <td><button><a href="/edit/{{Id}}">Edit</a></button></td>
-                        <td><button><a href="/delete/{{Id}}">Delete</a></button></td>
-                        {{/jobs}}
-                        </tr>
+<tr>
+			{{/jobs}}
+                     
                     </table>
-
-
-
-
                                       </div>
                                   </div>
                               </div>
