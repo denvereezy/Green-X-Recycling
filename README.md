@@ -8,7 +8,7 @@ The app uses geo-location to find out where workers is, the location of a job an
 ## Personas
 * [Biza](/Persona_Biza.md): Owner of Green X Recycling
 * [Lolo](/Persona_Lolo.md): Worker at Green X Recycling
-* [Phindile](/Persona_Phindile): Community member
+* [Phindile](/Persona_Phindile.md): Community member
 
 ## Instructions
 * Clone this repo to your local machine
